@@ -1,7 +1,7 @@
 title: "Giovana Cataldi - Piscóloga"
 description: "Site profissional da psicóloga Giovana Cataldi."
-url: "https://h-pgy.github.io/site_giovana_cataldi/"        # domínio completo se houver
-baseurl: ""    # raiz do site (ex: /blog)
+url: "https://h-pgy.github.io/"        # domínio completo se houver
+baseurl: "site_giovana_cataldi"    # raiz do site (ex: /blog)
 
 # Paleta de cores centralizada
 palette:
