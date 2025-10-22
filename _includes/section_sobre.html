@@ -1,0 +1,33 @@
+<section
+  id="sobre"
+  class="relative bg-[var(--background_alt)]/30 py-20 px-6 sm:px-8 lg:px-16 transition-colors"
+>
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Texto -->
+    <div>
+      <h2 class="text-4xl md:text-5xl font-semibold text-[var(--primary)] mb-6 mt-[-1rem] tracking-tight">
+        Sobre
+      </h2>
+      <p class="text-[var(--text)]/80 leading-relaxed mb-4">
+        Este site foi desenvolvido como uma Single Page Application (SPA) totalmente responsiva, 
+        utilizando Jekyll e TailwindCSS. O objetivo é apresentar meu trabalho de forma clara, elegante 
+        e acessível, mantendo uma linguagem visual delicada e moderna.
+      </p>
+      <p class="text-[var(--text)]/80 leading-relaxed">
+        Toda a estrutura é modular: cores, textos e seções podem ser alteradas facilmente através 
+        do arquivo <code class="text-[var(--accent)] font-medium">_config.yml</code>, permitindo manutenção e personalização simples.
+      </p>
+    </div>
+
+    <!-- Imagem -->
+    <div class="flex justify-center md:justify-end">
+      <img
+        src="{{ '/assets/img/sobre_img.jpeg' | relative_url }}"
+        alt="Imagem sobre mim"
+        class="rounded-2xl shadow-lg shadow-[var(--accent)]/20 w-full max-w-md hover:scale-[1.02] transition-transform duration-300 ease-out"
+      />
+    </div>
+
+  </div>
+</section>

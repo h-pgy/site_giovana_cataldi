@@ -1,0 +1,34 @@
+title: "Giovana Cataldi - Piscóloga"
+description: "Site profissional da psicóloga Giovana Cataldi."
+url: ""        # domínio completo se houver
+baseurl: ""    # raiz do site (ex: /blog)
+
+# Paleta de cores centralizada
+palette:
+  primary:    "#A4E8B0"
+  secondary:  "#F8EABC"
+  accent:     "#4CD7D0"
+  text:       "#6AB8EE"
+  background: "#ffffff"
+  background_alt: "#A8D9F8"
+
+# Links de contato
+social:
+  instagram: "https://instagram.com/meu_perfil"
+  whatsapp:  "https://wa.me/5511999999999"
+
+# Collections para os cards
+collections:
+  cards:
+    output: true
+
+# Configurações padrão
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: null
+  - scope:
+      path: "_cards"
+    values:
+      layout: null

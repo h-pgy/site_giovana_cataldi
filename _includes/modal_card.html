@@ -1,0 +1,51 @@
+<div
+  id="modal-{{ include.card.slug }}"
+  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 p-4"
+>
+  <div
+    class="relative max-w-2xl w-full rounded-2xl bg-[var(--bg)] text-[var(--text)] border border-[var(--accent)]/20 shadow-xl"
+  >
+    <!-- Fechar -->
+    <button
+      class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center text-[var(--text)]/70 hover:text-[var(--accent)] transition-colors"
+      data-close
+      aria-label="Fechar"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+
+    <!-- Imagem -->
+    <div class="rounded-t-2xl overflow-hidden">
+      <img
+        src="{{ include.card.image | relative_url }}"
+        alt="{{ include.card.title }}"
+        class="w-full h-64 md:h-72 object-cover"
+      />
+    </div>
+
+    <!-- divisor entre imagem e título -->
+    <div class="h-px bg-[var(--accent)]/20"></div>
+
+    <!-- Título -->
+    <div class="px-8 md:px-10 py-6">
+      <h3 class="text-3xl font-semibold tracking-tight text-[var(--primary)] text-center">
+        {{ include.card.title }}
+      </h3>
+    </div>
+
+    <!-- divisor entre título e conteúdo -->
+    <div class="h-px bg-[var(--accent)]/15"></div>
+
+    <!-- Conteúdo (justificado) -->
+    <div class="px-8 md:px-10 py-6 text-justify text-[var(--text)]/90 leading-relaxed">
+      {{ include.card.content | markdownify }}
+    </div>
+
+    <!-- rodapé decorativo discreto -->
+    <div class="px-8 md:px-10 pb-8">
+      <div class="h-[2px] w-20 mx-auto bg-[var(--accent)]/70 rounded-full"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<section
+  id="contato"
+  class="bg-[var(--background_alt)]/40 py-20 text-center text-[var(--text)]"
+>
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-semibold text-[var(--primary)] mb-6 mt-[-1rem] tracking-tight">
+      Entre em contato
+    </h2>
+    <p class="text-[var(--text)]/80 mb-10 leading-relaxed">
+      Fique à vontade para entrar em contato comigo por WhatsApp ou Instagram.
+      Será um prazer conversar com você.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-6">
+      <!-- Instagram -->
+      <a
+        href="{{ site.instagram_url }}"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center gap-3 px-6 py-3 rounded-full font-medium text-white bg-gradient-to-r from-[#f58529] via-[#dd2a7b] to-[#8134af] hover:opacity-90 shadow-md transition-all duration-300 hover:scale-105"
+      >
+        <img
+          src="{{ '/assets/img/instagram.svg' | relative_url }}"
+          alt=""
+          class="w-5 h-5"
+        />
+        Instagram
+      </a>
+
+      <!-- WhatsApp -->
+      <a
+        href="{{ site.whatsapp_url }}"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center gap-3 px-6 py-3 rounded-full font-medium text-white bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:opacity-90 shadow-md transition-all duration-300 hover:scale-105"
+      >
+        <img
+          src="{{ '/assets/img/whatsapp.svg' | relative_url }}"
+          alt=""
+          class="w-5 h-5"
+        />
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</section>

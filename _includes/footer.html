@@ -1,0 +1,16 @@
+<footer
+  class="bg-[var(--background_alt)]/50 border-t border-[var(--accent)]/20 py-10 text-center text-sm text-[var(--text)]/80"
+>
+  <div class="max-w-6xl mx-auto px-6 space-y-3">
+    <p class="font-medium text-[var(--primary)]">
+      {{ site.title }}
+    </p>
+    <p>© {{ site.time | date: "%Y" }}. Todos os direitos reservados.</p>
+    <p class="flex items-center justify-center gap-1 text-[var(--text)]/60">
+      Desenvolvido com
+      <span class="text-[var(--accent)] text-base animate-pulse">❤</span>
+      usando <span class="font-medium text-[var(--text)]">Jekyll</span> e
+      <span class="font-medium text-[var(--text)]">TailwindCSS</span>.
+    </p>
+  </div>
+</footer>

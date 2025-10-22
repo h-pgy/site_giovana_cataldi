@@ -1,0 +1,65 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <title>{{ site.title }}</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Paleta dinâmica do _config.yml -->
+    <style>
+      :root {
+        --primary: {{ site.palette.primary }};
+        --secondary: {{ site.palette.secondary }};
+        --accent: {{ site.palette.accent }};
+        --text: {{ site.palette.text }};
+        --bg: {{ site.palette.background }};
+        --bg-alt: {{ site.palette.background_alt }};
+      }
+
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+      }
+
+      /* Scroll suave global */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      @keyframes fadeIn {
+          from { opacity: 0; transform: scale(0.98); }
+          to { opacity: 1; transform: scale(1); }
+        }
+
+      .animate-fadeIn {
+        animation: fadeIn 0.25s ease-out;
+      }
+
+      .modal-content {
+        transition: all 0.25s ease-out;
+      }
+
+
+    </style>
+  </head>
+
+  <body class="antialiased bg-[var(--bg)] text-[var(--text)]">
+    {% include navbar.html %}
+    {% include banner_header.html %}
+    {% include hero.html %}
+    {% include section_sobre.html %}
+    {% include section_metodo.html %}
+    {% include section_contato.html %}
+    {% include footer.html %}
+    
+    <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+- id: hero
+  label: Início
+
+- id: sobre
+  label: Sobre
+
+- id: metodo
+  label: Meu método de trabalho
+
+- id: contato
+  label: Contato
